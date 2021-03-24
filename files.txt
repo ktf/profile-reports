@@ -7,9 +7,21 @@
           "object": {}
         },
         {
+          "name": "README.md",
+          "object": {
+            "byteSize": 22
+          }
+        },
+        {
           "name": "aodDataModelGraph.json",
           "object": {
             "byteSize": 9356935
+          }
+        },
+        {
+          "name": "files.txt",
+          "object": {
+            "byteSize": 398
           }
         },
         {
