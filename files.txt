@@ -1,0 +1,24 @@
+{
+  "repository": {
+    "object": {
+      "entries": [
+        {
+          "name": ".github",
+          "object": {}
+        },
+        {
+          "name": "aodDataModelGraph.json",
+          "object": {
+            "byteSize": 9356935
+          }
+        },
+        {
+          "name": "pwghf.json",
+          "object": {
+            "byteSize": 60078134
+          }
+        }
+      ]
+    }
+  }
+}
