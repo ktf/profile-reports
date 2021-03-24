@@ -45,12 +45,13 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Update README
       run: |
+        cat <<\EOF > files.txt
+        ${{ steps.get_files.outputs.data }}
+        EOF
         cat <<\EOF > README.md
         ## Available profiles
         EOF
-        cat <<\EOF | jq '.repository.object.entries[] | select(.name | test(".json")' | jq -r '"- [\(.name)](https://www.speedscope.app/#profileURL=https://raw.githubusercontent.com/ktf/profile-reports/main/\(.name))"' >> README.md
-        ${{ steps.get_files.outputs.data }}
-        EOF
+        cat files.txt | jq '.repository.object.entries[] | select(.name | test(".json")' | jq -r '"- [\(.name)](https://www.speedscope.app/#profileURL=https://raw.githubusercontent.com/ktf/profile-reports/main/\(.name))"' >> README.md
         cat README.md
     - name: Commit and push if changed
       run: |-
