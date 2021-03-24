@@ -51,7 +51,7 @@ jobs:
         cat <<\EOF > README.md
         ## Available profiles
         EOF
-        cat files.txt | jq '.repository.object.entries[] | select(.name | test(".json")' | jq -r '"- [\(.name)](https://www.speedscope.app/#profileURL=https://raw.githubusercontent.com/ktf/profile-reports/main/\(.name))"' >> README.md
+        cat files.txt | jq '.repository.object.entries[] | select(.name | test(".json"))' | jq -r '"- [\(.name)](https://www.speedscope.app/#profileURL=https://raw.githubusercontent.com/ktf/profile-reports/main/\(.name))"' >> README.md
         cat README.md
     - name: Commit and push if changed
       run: |-
