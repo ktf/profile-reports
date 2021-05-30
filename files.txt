@@ -9,11 +9,17 @@
         {
           "name": "README.md",
           "object": {
-            "byteSize": 296
+            "byteSize": 445
           }
         },
         {
-          "name": "SimReaderSpec.cxx.json",
+          "name": "SimReaderSpec-with-vc.cxx.json",
+          "object": {
+            "byteSize": 1340290
+          }
+        },
+        {
+          "name": "SimReaderSpec-without-vc.cxx.json",
           "object": {
             "byteSize": 1322150
           }
@@ -33,7 +39,7 @@
         {
           "name": "files.txt",
           "object": {
-            "byteSize": 741
+            "byteSize": 872
           }
         },
         {
