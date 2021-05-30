@@ -13,6 +13,12 @@
           }
         },
         {
+          "name": "SimReaderSpec.cxx.json",
+          "object": {
+            "byteSize": 1322150
+          }
+        },
+        {
           "name": "_config.yml",
           "object": {
             "byteSize": 25
@@ -27,7 +33,7 @@
         {
           "name": "files.txt",
           "object": {
-            "byteSize": 625
+            "byteSize": 741
           }
         },
         {
